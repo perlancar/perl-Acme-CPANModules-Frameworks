@@ -96,6 +96,7 @@ _
         # Plack?
 
         # web-form
+        {module=>'HTML::FormFu', tags=>['category:web-form']},
         {module=>'HTML::FormHandler', tags=>['category:web-form']},
     ],
 };

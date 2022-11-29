@@ -18,6 +18,10 @@ This list is used in building a list of framework classifiers in
 
 _
     entries => [
+        # acme
+        {module=>'Acme::CPANAuthors', tags=>['category:acme']},
+        {module=>'Acme::CPANModules', tags=>['category:acme']},
+
         # app
         {module=>'Jifty', tags=>['category:app']},
 
@@ -26,12 +30,24 @@ _
         {module=>'IO::Async', tags=>['category:async']},
         {module=>'POE', tags=>['category:async']},
 
+        # benchmark
+        {module=>'Bencher', tags=>['category:benchmark']},
+
         # caching
         {module=>'CHI', tags=>['category:caching']},
 
         # cli
         {module=>'App::Cmd', tags=>['category:cli']},
         {module=>'Perinci::CmdLine', tags=>['category:cli']},
+        {module=>'ScriptX', tags=>['category:cli','category:web']},
+
+        # data modules
+        {module=>'ArrayData', tags=>['category:data']},
+        {module=>'HashData', tags=>['category:data']},
+        {module=>'Games::Word::Phraselist', tags=>['category:data']},
+        {module=>'Games::Word::Wordlist', tags=>['category:data']},
+        {module=>'TableData', tags=>['category:data']},
+        {module=>'WordList', tags=>['category:data']},
 
         # database
         {module=>'DBI', tags=>['category:database']},
@@ -67,6 +83,10 @@ _
         # orm
         {module=>'DBIx::Class', tags=>['category:orm']},
 
+        # regexp
+        {module=>'Regexp::Common', tags=>['category:regexp']},
+        {module=>'Regexp::Pattern', tags=>['category:regexp']},
+
         # template
         {module=>'Template::Toolkit', tags=>['category:template']},
 
@@ -78,9 +98,9 @@ _
         {module=>'Type::Tiny', tags=>['category:type', 'category:validation']},
 
         # validation
+        {module=>'Data::Sah', tags=>['category:validation']},
         {module=>'Params::Validate', tags=>['category:validation']},
         # Params::ValidationCompiler?
-        {module=>'Sah', tags=>['category:validation']},
         # Specio*
         # Type::Tiny*
 
